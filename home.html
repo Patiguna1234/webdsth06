@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #0c0c0c;
+            margin: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:  rgb(255, 253, 253); /* Semi-transparent navbar */
+            padding: 10px 20px;
+            position: relative;
+            z-index: 1; /* Ensure navbar is above background */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            padding: 10px 15px; /* Reduced padding for closer menu items */
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #e76c6c;
+        }
+        .logo {
+            height: 100px; /* Adjust height as needed */
+        }
+        .logout-btn {
+            background-color: #f44336; /* Red color */
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .logout-btn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Stack navbar items vertically on small screens */
+                align-items: center; /* Center items */
+            }
+            .navbar li {
+                margin: 5px 0; /* Add margin for spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="dsonline.jpg" alt="Logo" class="logo">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="personil.html">Personil</a></li>
+            <li><a href="absensi.html">Absensi</a></li>
+            <li><a href="log_out.html" class="logout-btn">Log Out</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div style="position: relative; display: inline-block;">
+        <img src="fotoakhir.png" alt="" style="width: 100%; height: auto; max-width: 100%;">
+        <div style="position: absolute; top: 50%; left: 110%; transform: translateY(-110%); width: 400px; color: white; font-size: large; text-align: left; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+            DS Muara Karang adalah bagian dari Alfamart untuk melakukan penjualan secara online melalui sambungan Alfagift.
+        </div>
+    </div>
+</body>
+</html>

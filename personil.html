@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #0c0c0c;
+            margin: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:  rgb(255, 253, 253); /* Semi-transparent navbar */
+            padding: 10px 20px;
+            position: relative;
+            z-index: 1; /* Ensure navbar is above background */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            padding: 10px 15px; /* Reduced padding for closer menu items */
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #e76c6c;
+        }
+        .logo {
+            height: 100px; /* Adjust height as needed */
+        }
+        .logout-btn {
+            background-color: #f44336; /* Red color */
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .logout-btn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Stack navbar items vertically on small screens */
+                align-items: center; /* Center items */
+            }
+            .navbar li {
+                margin: 5px 0; /* Add margin for spacing */
+            }
+        }
+        .employee-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+        .employee-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .employee-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        h2 {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="dsonline.jpg" alt="Logo" class="logo">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="personil.html">Personil</a></li>
+            <li><a href="absensi.html">Absensi</a></li>
+            <li><a href="log_out.html" class="logout-btn">Log Out</a></li>
+        </ul>
+    </nav><hr>
+    <h2 style="margin-top: 40px;">Profil Personil</h2>
+    <div class="employee-container">
+        <div class="employee-box">
+            <img src="agung.jpg" alt="agung" style="display: block; margin: 0 auto; border-radius: 50%;">
+            <p style="margin: 5px 0;">NIK: 13070944</p>
+            <p style="margin: 5px 0;">Nama: AGUNG SHOLEHA</p>
+            <p style="margin: 5px 0;">Jabatan: CHIEF OF STORE</p>
+        </div>
+        <div class="employee-box">
+            <img src="heru.jpg" alt="heru" style="display: block; margin: 0 auto; border-radius: 50%;">
+            <p style="margin: 5px 0;">NIK: 19092028</p>
+            <p style="margin: 5px 0;">Nama: HERU PATIGUNA</p>
+            <p style="margin: 5px 0;">Jabatan: ASS CHIEF OF STORE</p>
+        </div>
+        <div class="employee-box">
+            <img src="kahfi.jpg" alt="kahfi" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 19109664</p>
+            <p style="margin: 5px 0;">Nama: KAHFI PADILAH</p>
+            <p style="margin: 5px 0;">Jabatan: ASS CHIEF OF STORE</p>
+        </div>
+        <div class="employee-box">
+            <img src="adam.jpg" alt="adam" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 22088858</p>
+            <p style="margin: 5px 0;">Nama: MUHAMAD ADAM</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="yudis.jpg" alt="yudis" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 22088859</p>
+            <p style="margin: 5px 0;">Nama: YUDISTIRA Y</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="muslim.jpg" alt="muslimm" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 22088861</p>
+            <p style="margin: 5px 0;">Nama: MUSLIM</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="akmal.jpg" alt="akmal" style="display: block; margin: 0 auto; border-radius: 50%;">
+            <p style="margin: 5px 0;">NIK: 23074098</p>
+            <p style="margin: 5px 0;">Nama: AKMAL F</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="hilmi.jpg" alt="hilmi" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 23094122</p>
+            <p style="margin: 5px 0;">Nama: F HILMI</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="fajrin.jpg" alt="fajrin" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 23012784</p>
+            <p style="margin: 5px 0;">Nama: FAJRIN HALIM</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="sandi.jpg" alt="sandi" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 24051435</p>
+            <p style="margin: 5px 0;">Nama: SANDI</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="parhan.jpg" alt="parhan" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 23032506</p>
+            <p style="margin: 5px 0;">Nama: M PARHAN</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+        <div class="employee-box">
+            <img src="isak.jpg" alt="isak" style="display: block; margin: 0 auto;">
+            <p style="margin: 5px 0;">NIK: 22109453</p>
+            <p style="margin: 5px 0;">Nama: MUHAMAD ISAK</p>
+            <p style="margin: 5px 0;">Jabatan: CREW</p>
+        </div>
+    </div>
+</body>
+</html>
+</create_file>

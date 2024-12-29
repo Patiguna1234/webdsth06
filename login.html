@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 15px; /* Reduced padding */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+            width: 300px; /* Set a fixed width for the form */
+            max-width: 100%; /* Ensure it doesn't exceed the screen width */
+        }
+        input {
+            margin: 8px 0; /* Reduced margin */
+            padding: 8px; /* Reduced padding */
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px; /* Reduced padding */
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        <img src="dsonline.jpg" alt="DS Online" style="max-width: 100%; height: auto; margin-bottom: 30px;">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="NIK" required>
+        <input type="password" id="password" placeholder="PIN" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you can add your authentication logic
+            // For demonstration, we'll just redirect to home.html
+            window.location.href = 'home.html';
+        });
+    </script>
+</body>
+</html>
+</create_file>
